@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat APP</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <section class="chat__section">
+      <div class="brand">
+        <div class="left">
+          <img height="40" src="/chat-2389223_1280.png" alt="" />
+          <h1>Let's Chit Chat</h1>
+        </div>
+        <div class="connections"></div>
+      </div>
+      <div class="message__area"></div>
+      <div class="msg-field">
+        <input id="textarea" placeholder="Write a message..." />
+      </div>
+    </section>
+
+    <!--we are importing this javascript file from server
+      which socket.io library already configured when we
+      connected it with http module -->
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!-- this is our custom javascript file you can name it anything... -->
+    <script src="/client.js"></script>
+  </body>
+</html>
